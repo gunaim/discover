@@ -1,0 +1,77 @@
+//= template/head.html
+<main>
+<section class="title-section">
+    <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="title">Otellər</div>
+                </div>
+                <div class="col-8 offset-2">
+                    <div class="filter">
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <input type="text" placeholder="Baki" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <select id="inputState1" class="form-control">
+                                    <option selected>Choose</option>
+                                    <option>Select1</option>
+                                    <option>Select2</option>
+                                    <option>Select3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose</option>
+                                    <option>Select1</option>
+                                    <option>Select2</option>
+                                    <option>Select3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <button type="submit" class="btn form-control">Yenilə</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<section class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="left-side">
+                        <div id="map"></div>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>    
+</section>
+    <script>
+        function initMap() {
+            var _position = {lat: 40.414483, lng: 49.8558967};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: _position,
+                disableDefaultUI: true,
+                streetViewControl: false,
+                zoomControl: false,
+            });
+            var marker = new google.maps.Marker({
+                position: _position,
+                map: map,
+                icon: {
+                    url: "img/location_on.png",
+                }
+            });
+
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvRF6OqEKBlvoCCAWo30nK2Pg-X0CPkkc&callback=initMap">
+    </script>
+</main>
+//= template/footer.html

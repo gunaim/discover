@@ -1,0 +1,40 @@
+.header-section{
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  nav{
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: -20px;
+      .navbar-brand{
+        height: 40px;
+        max-width: 200px;
+        margin-right: 80px;
+      }
+      .navbar-nav{
+        width: 100%;
+        .menu{
+          width: 70%;
+        }
+        .nav-item{
+          margin-right: 20px;
+          &:last-child{
+            margin-right: 0;
+          }
+          .nav-link{
+            color: #4c4c4c;
+            font-size: 16px;
+            &.dropdown-toggle {
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+        .login-language{
+          .nav-link{
+            color:#4e77af;
+          }
+        }
+      }
+  }
+}
