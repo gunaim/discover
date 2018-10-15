@@ -32,7 +32,6 @@
     background-color: #e6e6e6;
   }
 }
-
 .content-section{
   .border-bottom{
     background-color: #e6e6e6;
@@ -131,7 +130,6 @@
         ul{
           &.stars{
             list-style: none;
-            margin-left: 5px;
             li{
               display: inline-block;
               &:last-child{
@@ -162,5 +160,19 @@
       }
     }
 
+  }
+  nav{
+    ul{
+      &.pagination{
+        .page-item{
+          .page-link{
+            color:#4e77af !important;
+            font-size: 1.4rem !important;
+            border: none;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
   }
 }

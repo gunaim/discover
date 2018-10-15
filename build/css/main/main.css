@@ -250,8 +250,7 @@ body {
     padding-top: 25px;
     float: left; }
     .content-section .hotel-section .hotel-info .service-info ul.stars {
-      list-style: none;
-      margin-left: 5px; }
+      list-style: none; }
       .content-section .hotel-section .hotel-info .service-info ul.stars li {
         display: inline-block; }
         .content-section .hotel-section .hotel-info .service-info ul.stars li:last-child {
@@ -277,6 +276,12 @@ body {
           font-size: 2.1rem;
           color: #4e77af;
           margin-right: 5px; }
+
+.content-section nav ul.pagination .page-item .page-link {
+  color: #4e77af !important;
+  font-size: 1.4rem !important;
+  border: none;
+  font-weight: bolder; }
 
 .header-section {
   background-color: #fff;
