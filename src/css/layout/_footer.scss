@@ -49,4 +49,41 @@ footer{
       }
     }
   }
+  .footer-menu-block{
+    padding: 10px 0 0;
+    .footer-menu-title{
+      color: #4c4c4c;
+      font-size: 1.6rem !important;
+      padding-bottom:15px;
+      padding-left: 2px;
+    }
+    .footer-menu-items{
+     li{
+       display: flex;
+       align-items: center;
+       a{
+         color: #808080;
+         font-size: 1.4rem;
+         line-height: 3rem;
+         text-decoration: none;
+         &:before{
+           font-family: "Material Icons";
+           content: "chevron_right";
+           color: grey;
+           font-size: 1.4rem;
+         }
+         &.login-link{
+           color:#ff7800;
+           font-weight: bolder;
+           &:before{
+             font-family: "Material Icons";
+             content: "business_center";
+             color: #ff7800;
+             font-size: 1.4rem;
+           }
+         }
+       }
+     }
+    }
+  }
 }

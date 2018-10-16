@@ -324,6 +324,42 @@ footer {
         background-color: #bb0000; }
       footer .img-section .social-block .social-icon:nth-child(4) {
         background-color: #c13584; }
+  footer .footer-menu-block {
+    padding: 10px 0 0; }
+    footer .footer-menu-block .footer-menu-title {
+      color: #4c4c4c;
+      font-size: 1.6rem !important;
+      padding-bottom: 15px;
+      padding-left: 2px; }
+    footer .footer-menu-block .footer-menu-items li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      footer .footer-menu-block .footer-menu-items li a {
+        color: #808080;
+        font-size: 1.4rem;
+        line-height: 3rem;
+        text-decoration: none; }
+        footer .footer-menu-block .footer-menu-items li a:before {
+          font-family: "Material Icons";
+          content: "chevron_right";
+          color: grey;
+          font-size: 1.4rem; }
+        footer .footer-menu-block .footer-menu-items li a.login-link {
+          color: #ff7800;
+          font-weight: bolder; }
+          footer .footer-menu-block .footer-menu-items li a.login-link:before {
+            font-family: "Material Icons";
+            content: "business_center";
+            color: #ff7800;
+            font-size: 1.4rem; }
 
 .header-section {
   background-color: #fff;
