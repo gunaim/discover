@@ -1,89 +1,133 @@
 footer{
   border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
   background-color: #fafafa;
   padding: 40px 0;
-  margin-bottom: 20px;
-  .img-section{
-    .footer-logo-link{
-      display: block;
-      margin-bottom: 10px;
-      img{
-        width: 100%;
-        max-width: 200px;
-        max-height: 90px;
+  .menu-section{
+    .img-section{
+      .footer-logo-link{
+        display: block;
+        margin-bottom: 10px;
+        img{
+          width: 100%;
+          max-width: 200px;
+          max-height: 90px;
+        }
+      }
+      p{
+        color: #808080;
+        font-size: 1.4rem;
+      }
+      .footer-logo-img-link{
+        padding: 15px 0;
+        img{
+          margin-right: 5px;
+        }
+      }
+      .social-block{
+        padding: 20px 0 0 0;
+        .social-icon{
+          display: inline-block;
+          height: 36px;
+          width: 36px;
+          border-radius: 50%;
+          line-height: 36px;
+          text-align: center;
+          margin-right: 5px;
+          &:nth-child(1){
+            background-color: #3b5998;
+          }
+          &:nth-child(2){
+            background-color: #00aced;
+          }
+          &:nth-child(3){
+            background-color: #bb0000;
+          }
+          &:nth-child(4){
+            background-color: #c13584;
+          }
+        }
       }
     }
-     p{
-      color: #808080;
-      font-size: 1.4rem;
-    }
-    .footer-logo-img-link{
-      padding: 15px 0;
-      img{
-        margin-right: 5px;
+    .footer-menu-block{
+      padding: 10px 0 0;
+      .footer-menu-title{
+        color: #4c4c4c;
+        font-size: 1.6rem !important;
+        padding-bottom:14px;
+        padding-left: 2px;
       }
-    }
-    .social-block{
-      padding: 20px 0 0 0;
-      .social-icon{
-        display: inline-block;
-        height: 36px;
-        width: 36px;
-        border-radius: 50%;
-        line-height: 36px;
-        text-align: center;
-        margin-right: 5px;
-        &:nth-child(1){
-          background-color: #3b5998;
-        }
-        &:nth-child(2){
-          background-color: #00aced;
-        }
-        &:nth-child(3){
-          background-color: #bb0000;
-        }
-        &:nth-child(4){
-          background-color: #c13584;
+      .footer-menu-items{
+        padding-left: 15px;
+        li{
+          position: relative;
+          a{
+            color: #808080;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            text-decoration: none;
+            &:before{
+              font-family: "Material Icons";
+              content: "chevron_right";
+              color: grey;
+              font-size: 1.4rem;
+              position: absolute;
+              top:1px;
+              left: -16px;
+            }
+            &.login-link{
+              color:#ff7800;
+              font-weight: bolder;
+              &:before{
+                font-family: "Material Icons";
+                content: "business_center";
+                color: #ff7800;
+                font-size: 1.4rem;
+                position: absolute;
+                top:1px;
+                left: -16px;
+              }
+            }
+          }
         }
       }
     }
   }
-  .footer-menu-block{
-    padding: 10px 0 0;
-    .footer-menu-title{
-      color: #4c4c4c;
-      font-size: 1.6rem !important;
-      padding-bottom:15px;
-      padding-left: 2px;
+  .contact-section{
+    padding: 50px 0 40px 0;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    .footer-contact-info{
+      .footer-contact-title{
+        padding-bottom: 20px;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        color: #4c4c4c;
+      }
+      .contact-link{
+        text-decoration: none;
+        font-size:1.8rem;
+        color: #4c4c4c;
+        line-height: 2.6rem;
+        display: flex;
+        align-items: center;
+        .contact-icon{
+          color: #4e77af;
+          font-size: 2.4rem;
+          margin-right: 7px;
+        }
+      }
+      .contact-description{
+        color: #b2b2b2;
+        font-size: 1.2rem;
+        line-height: 2.6rem;
+      }
+      img{
+        margin-right: 10px;
+      }
     }
-    .footer-menu-items{
-     li{
-       display: flex;
-       align-items: center;
-       a{
-         color: #808080;
-         font-size: 1.4rem;
-         line-height: 3rem;
-         text-decoration: none;
-         &:before{
-           font-family: "Material Icons";
-           content: "chevron_right";
-           color: grey;
-           font-size: 1.4rem;
-         }
-         &.login-link{
-           color:#ff7800;
-           font-weight: bolder;
-           &:before{
-             font-family: "Material Icons";
-             content: "business_center";
-             color: #ff7800;
-             font-size: 1.4rem;
-           }
-         }
-       }
-     }
-    }
+  }
+  .footer-bottom-section{
+    border-top: 1px solid #e6e6e6;
+    padding: 25px 0;
   }
 }
