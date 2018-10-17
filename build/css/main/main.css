@@ -193,7 +193,8 @@ body {
         .content-section .sort ul li:last-child {
           margin-right: 0; }
         .content-section .sort ul li a {
-          color: #4d4d4d; }
+          color: #4d4d4d;
+          text-decoration: none; }
         .content-section .sort ul li .color-blue {
           color: blue; }
   .content-section .hotel-section .hotel-info {
@@ -244,7 +245,8 @@ body {
         width: 100%;
         text-align: center;
         font-size: 1.4rem;
-        font-weight: bolder; }
+        font-weight: bolder;
+        text-decoration: none; }
     .content-section .hotel-section .hotel-info .service-info {
       padding-top: 25px;
       float: left; }
@@ -287,7 +289,9 @@ body {
 footer {
   border-top: 1px solid #e6e6e6;
   background-color: #fafafa;
-  padding: 40px 0; }
+  padding: 40px 0 0 0;
+  float: left;
+  width: 100%; }
   footer .menu-section .img-section .footer-logo-link {
     display: block;
     margin-bottom: 10px; }
@@ -393,7 +397,23 @@ footer {
       margin-right: 10px; }
   footer .footer-bottom-section {
     border-top: 1px solid #e6e6e6;
-    padding: 25px 0; }
+    padding: 20px 0;
+    float: left;
+    width: 100%; }
+    footer .footer-bottom-section ul {
+      margin-bottom: 0; }
+      footer .footer-bottom-section ul li {
+        margin-right: 0 !important; }
+        footer .footer-bottom-section ul li a {
+          text-decoration: none;
+          color: #4e77af;
+          font-size: 1.4rem; }
+        footer .footer-bottom-section ul li:after {
+          content: "|";
+          margin: 0 6px;
+          color: #4e77af; }
+        footer .footer-bottom-section ul li:last-child:after {
+          content: ""; }
 
 .header-section {
   background-color: #fff;

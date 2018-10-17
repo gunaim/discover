@@ -1,7 +1,9 @@
 footer{
   border-top: 1px solid #e6e6e6;
   background-color: #fafafa;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
+  float: left;
+  width: 100%;
   .menu-section{
     .img-section{
       .footer-logo-link{
@@ -128,6 +130,27 @@ footer{
   }
   .footer-bottom-section{
     border-top: 1px solid #e6e6e6;
-    padding: 25px 0;
+    padding: 20px 0;
+    float: left;
+    width: 100%;
+    ul{
+      margin-bottom: 0;
+      li{
+        margin-right: 0 !important;
+        a{
+          text-decoration: none;
+          color: #4e77af;
+          font-size:1.4rem;
+        }
+        &:after{
+          content: "|";
+          margin: 0 6px;
+          color: #4e77af;
+        }
+        &:last-child:after{
+          content: "";
+        }
+      }
+    }
   }
 }
