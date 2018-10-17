@@ -46,6 +46,50 @@
       width: 100%;
       height: 160px;
     }
+    .input-group{
+      width: 100%;
+      margin:25px 0;
+      position: relative;
+      .input-group-prepend,.input-group-append{
+        position: absolute;
+        top: 2px;
+        &:hover {
+          text-decoration: none;
+        }
+        .input-group-text{
+          color: #b2b2b2;
+          background-color: transparent;
+          border: 1px solid transparent;
+          border-radius: 0;
+        }
+      }
+      .input-group-prepend{
+        z-index: 44;
+        left: -8px;
+      }
+      .input-group-append{
+        z-index: 33;
+        right: -8px;
+      }
+      .form-control{
+        padding: 10px 25px;
+      }
+    }
+    .delete{
+
+    }
+    .price{
+      border-top: 1px solid #cccccc;
+      padding: 20px 0;
+      label{
+        color: #4c4c4c;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+      input{
+        margin-bottom: 10px;
+      }
+    }
   }
   .sort{
     padding-top: 10px;
@@ -164,7 +208,7 @@
     }
 
   }
-  nav{
+   nav{
     ul{
       &.pagination{
         .page-item{
