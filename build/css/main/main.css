@@ -177,6 +177,14 @@ body {
     margin: 25px 0; }
   .content-section .left-side {
     padding-top: 25px; }
+    .content-section .left-side .left-title {
+      color: #4c4c4c;
+      font-size: 1.8rem;
+      margin-bottom: 10px; }
+    .content-section .left-side .left-border {
+      border-top: 1px solid #cccccc; }
+    .content-section .left-side .left-padding-top {
+      padding-top: 10px; }
     .content-section .left-side #map {
       width: 100%;
       height: 160px; }
@@ -198,19 +206,35 @@ body {
                   border-radius: 0; }
       .content-section .left-side .input-group .input-group-prepend {
         z-index: 44;
-        left: -8px; }
+        left: 0px; }
       .content-section .left-side .input-group .input-group-append {
         z-index: 33;
-        right: -8px; }
+        right: 0px; }
       .content-section .left-side .input-group .form-control {
         padding: 10px 25px; }
+    .content-section .left-side .delete {
+      margin-bottom: 10px; }
+      .content-section .left-side .delete ul {
+        padding: 0 !important;
+        list-style: none; }
+        .content-section .left-side .delete ul li {
+          line-height: 3rem; }
+          .content-section .left-side .delete ul li span {
+            color: #4e77af;
+            font-size: 1.4rem; }
+          .content-section .left-side .delete ul li a {
+            float: right;
+            font-size: 2rem;
+            color: #4e77af; }
+          .content-section .left-side .delete ul li:first-child {
+            margin-bottom: 10px; }
+            .content-section .left-side .delete ul li:first-child span {
+              font-size: 1.8rem;
+              color: #4c4c4c; }
+            .content-section .left-side .delete ul li:first-child a {
+              font-size: 1.2rem; }
     .content-section .left-side .price {
-      border-top: 1px solid #cccccc;
       padding: 20px 0; }
-      .content-section .left-side .price label {
-        color: #4c4c4c;
-        font-size: 1.8rem;
-        margin-bottom: 10px; }
       .content-section .left-side .price input {
         margin-bottom: 10px; }
   .content-section .sort {
