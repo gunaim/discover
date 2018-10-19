@@ -194,7 +194,7 @@ body {
       position: relative; }
       .content-section .left-side .input-group .input-group-prepend, .content-section .left-side .input-group .input-group-append {
         position: absolute;
-        top: 2px; }
+        top: 5px; }
         .content-section .left-side .input-group .input-group-prepend:hover, .content-section .left-side .input-group .input-group-append:hover {
           text-decoration: none; }
         .content-section .left-side .input-group .input-group-prepend .input-group-text, .content-section .left-side .input-group .input-group-append .input-group-text {
@@ -210,8 +210,26 @@ body {
       .content-section .left-side .input-group .input-group-append {
         z-index: 33;
         right: 0px; }
-      .content-section .left-side .input-group .form-control {
-        padding: 10px 25px; }
+      .content-section .left-side .input-group input[type='text'] {
+        font-size: 1.4rem;
+        color: #b2b2b2; }
+        .content-section .left-side .input-group input[type='text'].form-control {
+          padding: 10px 35px; }
+          .content-section .left-side .input-group input[type='text'].form-control::-webkit-input-placeholder {
+            color: #b2b2b2;
+            font-size: 1.4rem; }
+          .content-section .left-side .input-group input[type='text'].form-control:-moz-placeholder {
+            color: #b2b2b2;
+            font-size: 1.4rem; }
+          .content-section .left-side .input-group input[type='text'].form-control::-moz-placeholder {
+            color: #b2b2b2;
+            font-size: 1.4rem; }
+          .content-section .left-side .input-group input[type='text'].form-control:-ms-input-placeholder {
+            color: #b2b2b2;
+            font-size: 1.4rem; }
+          .content-section .left-side .input-group input[type='text'].form-control::placeholder {
+            color: #b2b2b2;
+            font-size: 1.4rem; }
     .content-section .left-side .delete {
       margin-bottom: 10px; }
       .content-section .left-side .delete ul {
@@ -225,14 +243,17 @@ body {
           .content-section .left-side .delete ul li a {
             float: right;
             font-size: 2rem;
-            color: #4e77af; }
+            color: #4e77af;
+            max-height: 30px;
+            padding-top: 3px; }
           .content-section .left-side .delete ul li:first-child {
             margin-bottom: 10px; }
             .content-section .left-side .delete ul li:first-child span {
               font-size: 1.8rem;
               color: #4c4c4c; }
             .content-section .left-side .delete ul li:first-child a {
-              font-size: 1.2rem; }
+              font-size: 1.2rem;
+              text-decoration: none; }
     .content-section .left-side .price {
       padding: 20px 0; }
       .content-section .left-side .price input {
