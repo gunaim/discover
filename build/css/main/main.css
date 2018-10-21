@@ -162,7 +162,16 @@ body {
         color: #fff;
         -webkit-border-radius: 3px;
            -moz-border-radius: 3px;
-                border-radius: 3px; }
+                border-radius: 3px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        .title-section .filter .form-row .form-group .btn:hover {
+          -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+             -moz-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+                  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+          background: #5370AF; }
   .title-section .line {
     height: 0.1rem;
     width: 100%;
@@ -176,7 +185,8 @@ body {
     width: 100%;
     margin: 25px 0; }
   .content-section .left-side {
-    padding-top: 25px; }
+    padding-top: 30px;
+    margin-right: 10px; }
     .content-section .left-side .left-title {
       color: #4c4c4c;
       font-size: 1.8rem;
@@ -258,9 +268,87 @@ body {
       padding: 20px 0; }
       .content-section .left-side .price input {
         margin-bottom: 10px; }
+    .content-section .left-side .distance label {
+      color: #808080;
+      font-size: 1.4rem; }
+    .content-section .left-side .distance select.form-control {
+      font-size: 1.4rem; }
+      .content-section .left-side .distance select.form-control:not([size]):not([multiple]) {
+        height: -webkit-calc(3.4rem + 2px);
+        height: -moz-calc(3.4rem + 2px);
+        height: calc(3.4rem + 2px); }
+    .content-section .left-side .distance select option {
+      color: #808080; }
+    .content-section .left-side .comment form {
+      padding: 10px 0; }
+      .content-section .left-side .comment form .form-check {
+        position: relative;
+        margin-bottom: 1rem; }
+        .content-section .left-side .comment form .form-check input[type="radio"] {
+          display: none; }
+          .content-section .left-side .comment form .form-check input[type="radio"]:checked + label i {
+            color: #ff7800; }
+          .content-section .left-side .comment form .form-check input[type="radio"]:checked + label::before {
+            font-family: "Material Icons";
+            content: "\e837";
+            position: absolute;
+            margin-left: -12px;
+            top: -4px;
+            left: 10px;
+            font-size: 1.6rem;
+            color: #4e77af; }
+          .content-section .left-side .comment form .form-check input[type="radio"]:checked + label::after {
+            color: #fff; }
+        .content-section .left-side .comment form .form-check label {
+          margin-left: 2px; }
+          .content-section .left-side .comment form .form-check label i {
+            color: #808080;
+            font-size: 1.6rem; }
+          .content-section .left-side .comment form .form-check label:before {
+            font-family: "Material Icons";
+            content: "\e836";
+            position: absolute;
+            margin-left: -12px;
+            top: -4px;
+            left: 10px;
+            font-size: 1.6rem;
+            color: #808080; }
+    .content-section .left-side .style form {
+      padding: 10px 0; }
+      .content-section .left-side .style form .form-check {
+        position: relative;
+        margin-bottom: 1rem; }
+        .content-section .left-side .style form .form-check input[type="checkbox"] {
+          display: none; }
+          .content-section .left-side .style form .form-check input[type="checkbox"]:checked + label i {
+            color: #ff7800; }
+          .content-section .left-side .style form .form-check input[type="checkbox"]:checked + label::before {
+            font-family: "Material Icons";
+            content: "\e834";
+            color: #4e77af; }
+          .content-section .left-side .style form .form-check input[type="checkbox"]:checked + label::after {
+            color: #fff; }
+        .content-section .left-side .style form .form-check label {
+          margin-left: 2px;
+          color: #808080;
+          font-size: 1.4rem; }
+          .content-section .left-side .style form .form-check label i {
+            color: #808080;
+            font-size: 1.6rem; }
+          .content-section .left-side .style form .form-check label:before {
+            font-family: "Material Icons";
+            content: "\e835";
+            position: absolute;
+            margin-left: -12px;
+            top: -1px;
+            left: 10px;
+            font-size: 1.6rem;
+            color: #808080; }
+    .content-section .left-side .reklam img {
+      margin-top: 15px; }
   .content-section .sort {
-    padding-top: 10px;
-    margin-top: 15px; }
+    padding-top: 15px;
+    margin-left: -10px; }
     .content-section .sort ul {
       list-style: none;
       padding-left: 0; }
@@ -275,44 +363,41 @@ body {
           text-decoration: none; }
         .content-section .sort ul li .color-blue {
           color: blue; }
-  .content-section .hotel-section .hotel-info {
-    overflow: hidden; }
-    .content-section .hotel-section .hotel-info .hotel-img {
-      height: 180px;
-      width: 280px;
-      float: left; }
-      .content-section .hotel-section .hotel-info .hotel-img img {
-        height: 100%;
-        width: 100%;
+  .content-section .hotel-info {
+    margin-left: 5px; }
+    .content-section .hotel-info .hotel-img {
+      padding-right: 10px; }
+      .content-section .hotel-info .hotel-img img {
+        height: 180px;
+        width: 270px;
         -o-object-fit: cover;
            object-fit: cover;
         -webkit-border-radius: 3px;
            -moz-border-radius: 3px;
                 border-radius: 3px; }
-    .content-section .hotel-section .hotel-info .hotel-text {
-      padding-left: 25px;
-      float: left; }
-      .content-section .hotel-section .hotel-info .hotel-text h3 {
+    .content-section .hotel-info .hotel-text {
+      padding-left: 0px; }
+      .content-section .hotel-info .hotel-text h3 {
         color: #4e77af;
         font-size: 2.2rem;
         font-weight: bolder; }
-      .content-section .hotel-section .hotel-info .hotel-text span {
+      .content-section .hotel-info .hotel-text span {
         color: #808080;
         font-size: 1.4rem; }
-      .content-section .hotel-section .hotel-info .hotel-text ul {
+      .content-section .hotel-info .hotel-text ul {
         list-style: none;
         padding-left: 0;
         margin-bottom: 0;
         margin-top: 3px; }
-        .content-section .hotel-section .hotel-info .hotel-text ul li {
+        .content-section .hotel-info .hotel-text ul li {
           display: inline-block; }
-          .content-section .hotel-section .hotel-info .hotel-text ul li i {
+          .content-section .hotel-info .hotel-text ul li i {
             color: #b2b2b2; }
-      .content-section .hotel-section .hotel-info .hotel-text p {
+      .content-section .hotel-info .hotel-text p {
         color: #ff7800;
         font-size: 2.4rem;
         font-weight: bolder; }
-      .content-section .hotel-section .hotel-info .hotel-text a {
+      .content-section .hotel-info .hotel-text a {
         display: inline-block;
         background-color: #ff7800;
         padding: 8px 10px;
@@ -324,21 +409,31 @@ body {
         text-align: center;
         font-size: 1.4rem;
         font-weight: bolder;
-        text-decoration: none; }
-    .content-section .hotel-section .hotel-info .service-info {
-      padding-top: 25px;
-      float: left; }
-      .content-section .hotel-section .hotel-info .service-info ul.stars {
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        .content-section .hotel-info .hotel-text a:hover {
+          -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+             -moz-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+                  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+          background: #ff983d; }
+    .content-section .hotel-info .service-info {
+      padding-top: 25px; }
+      .content-section .hotel-info .service-info ul.stars {
         list-style: none; }
-        .content-section .hotel-section .hotel-info .service-info ul.stars li {
+        .content-section .hotel-info .service-info ul.stars li {
           display: inline-block; }
-          .content-section .hotel-section .hotel-info .service-info ul.stars li:last-child {
-            margin-left: 15px; }
-          .content-section .hotel-section .hotel-info .service-info ul.stars li i {
+          .content-section .hotel-info .service-info ul.stars li:last-child {
+            margin-left: 15px;
+            color: #808080;
+            font-size: 1.2rem; }
+          .content-section .hotel-info .service-info ul.stars li i {
             color: #b2b2b2; }
-      .content-section .hotel-section .hotel-info .service-info ul.services {
+      .content-section .hotel-info .service-info ul.services {
         list-style: none; }
-        .content-section .hotel-section .hotel-info .service-info ul.services li {
+        .content-section .hotel-info .service-info ul.services li {
           font-size: 1.2rem;
           display: -webkit-box;
           display: -webkit-flex;
@@ -351,18 +446,21 @@ body {
               -ms-flex-align: center;
                   align-items: center;
           line-height: 2.3rem; }
-          .content-section .hotel-section .hotel-info .service-info ul.services li i {
+          .content-section .hotel-info .service-info ul.services li i {
             font-size: 2.1rem;
             color: #4e77af;
             margin-right: 5px; }
-  .content-section nav ul.pagination .page-item .page-link {
-    color: #4e77af !important;
-    font-size: 1.4rem !important;
-    border: none;
-    font-weight: bolder; }
-    .content-section nav ul.pagination .page-item .page-link i {
-      font-size: 1.4rem;
-      font-weight: bolder; }
+  .content-section nav {
+    margin-right: -22px; }
+    .content-section nav ul.pagination .page-item .page-link {
+      color: #4e77af !important;
+      font-size: 1.4rem !important;
+      border: none;
+      font-weight: bolder;
+      background-color: transparent; }
+      .content-section nav ul.pagination .page-item .page-link i {
+        font-size: 1.4rem;
+        font-weight: bolder; }
 
 footer {
   border-top: 1px solid #e6e6e6;
@@ -508,6 +606,11 @@ footer {
       width: 100%; }
       .header-section nav .navbar-nav .menu {
         width: 70%; }
+        .header-section nav .navbar-nav .menu .dropdown-menu .dropdown-item {
+          font-size: 1.4rem; }
+          .header-section nav .navbar-nav .menu .dropdown-menu .dropdown-item:hover {
+            color: #166de3;
+            background-color: transparent; }
       .header-section nav .navbar-nav .nav-item {
         margin-right: 20px; }
         .header-section nav .navbar-nav .nav-item:last-child {
@@ -519,6 +622,11 @@ footer {
             display: none; }
       .header-section nav .navbar-nav .login-language .nav-link {
         color: #4e77af; }
+      .header-section nav .navbar-nav .login-language .dropdown-menu .dropdown-item {
+        font-size: 1.4rem; }
+        .header-section nav .navbar-nav .login-language .dropdown-menu .dropdown-item:hover {
+          color: #166de3;
+          background-color: transparent; }
 
 /*! WEBCODER - http://webcoder.az/ Mehemmed Memmedli  16 Aprel 2018  https://github.com/nemerki */
 /* ==========================================================================

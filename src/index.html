@@ -14,7 +14,7 @@
                                 </div>
                                 <div class="form-group col-md-2">
                                     <select id="inputState1" class="form-control">
-                                        <option selected>Choose</option>
+                                        <option value="" hidden>Choose</option>
                                         <option>Select1</option>
                                         <option>Select2</option>
                                         <option>Select3</option>
@@ -22,7 +22,7 @@
                                 </div>
                                 <div class="form-group col-md-2">
                                     <select id="inputState" class="form-control">
-                                        <option selected>Choose</option>
+                                        <option value="" hidden>Choose</option>
                                         <option>Select1</option>
                                         <option>Select2</option>
                                         <option>Select3</option>
@@ -43,7 +43,7 @@
 <section class="content-section">
     <div class="container">
         <div class="row">
-             <div class="col-md-3">
+            <div class="col-md-3">
                     <div class="left-side">
                         <div id="map"></div>
                         <div class="input-group">
@@ -85,23 +85,123 @@
                         </div>
                         <div class="distance left-border left-padding-top">
                             <p class="left-title">Uzaqlıq:</p>
+                            <form action="#">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option value="" hidden>Obyekt</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Məsafə:</label>
+                                    <select class="form-control">
+                                        <option>500 metr yaxınlığında</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </form>
                         </div>
                         <div class="comment left-border left-padding-top">
                             <p class="left-title">Rey:</p>
+                            <form action="#">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star_border</i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star_border</i>
+                                        <i class="material-icons">star_border</i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option1">
+                                    <label class="form-check-label" for="exampleRadios5">
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star_border</i>
+                                        <i class="material-icons">star_border</i>
+                                        <i class="material-icons">star_border</i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option1">
+                                    <label class="form-check-label" for="exampleRadios4">
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star</i>
+                                        <i class="material-icons">star_border</i>
+                                        <i class="material-icons">star_border</i>
+                                        <i class="material-icons">star_border</i>
+                                    </label>
+                                </div>
+                            </form>
                         </div>
                         <div class="style left-border left-padding-top">
                             <p class="left-title">Stil:</p>
+                            <form action="#">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Büdcə
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked>
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        Luxury
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                    <label class="form-check-label" for="defaultCheck3">
+                                        Çimərlik
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                    <label class="form-check-label" for="defaultCheck4">
+                                        Hostel
+                                    </label>
+                                </div>
+                                <!--<a href="#"><i class="material-icons">arrow</i>Daha cox</a>-->
+                            </form>
                         </div>
                         <div class="reklam">
-                            <img class="img-fluid" src="img/Layer%20655.png" alt="">
-                            <img class="img-fluid" src="img/Layer%20666.png" alt="">
+                            <a href="#">
+                                <img class="img-fluid" src="img/Layer%20655.png" alt="reklam img">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="img/Layer%20666.png" alt="reklam img">
+                            </a>
                         </div>
                     </div>
              </div>
             <div class="col-md-9">
                 <div class="row">
                     <div class="col-md-12">
-                            <div class="sort">
+                        <div class="sort">
                                 <ul>
                                     <li class="font-weight-bold">Sırala:</li>
                                     <li><a href="#" class="color-blue font-weight-bold">A-Z</a></li>
@@ -109,11 +209,17 @@
                                     <li><a href="#">Minimal qiymət</a></li>
                                 </ul>
                             </div>
-                            <div class="hotel-section">
-                                <div class="hotel-info">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="hotel-info">
+                            <div class="row">
+                                <div class="col-md-4">
                                     <div class="hotel-img">
-                                        <img src="https://picsum.photos/200/300?image=0" alt="">
+                                        <img class="img-fluid" src="img/1-1200x900.jpg" alt="hotel img">
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="hotel-text">
                                         <h3>Four Seasons Hotel Baku</h3>
                                         <span>Bakı</span>
@@ -127,6 +233,8 @@
                                         <p>250 - 460 <sup>m</sup></p>
                                         <a href="#">Ətraflı</a>
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="service-info">
                                         <ul class="stars d-flex align-items-center">
                                             <li><i class="material-icons">star</i></li>
@@ -146,17 +254,21 @@
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
-                                <div class="border-bottom"></div>
                             </div>
-                            <div class="hotel-section">
-                                <div class="hotel-info">
+                            <div class="border-bottom"></div>
+                            <div class="row">
+                                <div class="col-md-4">
                                     <div class="hotel-img">
-                                        <img src="https://picsum.photos/200/300?image=11" alt="">
+                                        <img class="img-fluid" src="img/hotel_2.png" alt="hotel img">
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="hotel-text">
-                                        <h3>Four Seasons Hotel Baku</h3>
+                                        <h3>Deniz Inn Boutique Hotel</h3>
                                         <span>Bakı</span>
                                         <ul>
+                                            <li><i class="material-icons">stars</i></li>
+                                            <li><i class="material-icons">stars</i></li>
                                             <li><i class="material-icons">stars</i></li>
                                             <li><i class="material-icons">stars</i></li>
                                             <li><i class="material-icons">stars</i></li>
@@ -164,11 +276,13 @@
                                         <p>250 - 460 <sup>m</sup></p>
                                         <a href="#">Ətraflı</a>
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="service-info">
                                         <ul class="stars d-flex align-items-center">
                                             <li><i class="material-icons">star</i></li>
                                             <li><i class="material-icons">star</i></li>
-                                            <li><i class="material-icons">star</i></li>
+                                            <li><i class="material-icons">star_half</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li>368 rəy əsasında</li>
@@ -183,15 +297,17 @@
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
-                                <div class="border-bottom"></div>
                             </div>
-                            <div class="hotel-section">
-                                <div class="hotel-info">
+                            <div class="border-bottom"></div>
+                            <div class="row">
+                                <div class="col-md-4">
                                     <div class="hotel-img">
-                                        <img src="https://picsum.photos/200/300?image=41" alt="">
+                                        <img class="img-fluid" src="img/hotel%2044.png" alt="hotel img">
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="hotel-text">
-                                        <h3>Four Seasons Hotel Baku</h3>
+                                        <h3>Ramada Hotel Gabala</h3>
                                         <span>Bakı</span>
                                         <ul>
                                             <li><i class="material-icons">stars</i></li>
@@ -203,11 +319,13 @@
                                         <p>250 - 460 <sup>m</sup></p>
                                         <a href="#">Ətraflı</a>
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="service-info">
                                         <ul class="stars d-flex align-items-center">
                                             <li><i class="material-icons">star</i></li>
                                             <li><i class="material-icons">star</i></li>
-                                            <li><i class="material-icons">star</i></li>
+                                            <li><i class="material-icons">star_half</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li>368 rəy əsasında</li>
@@ -222,15 +340,17 @@
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
-                                <div class="border-bottom"></div>
                             </div>
-                            <div class="hotel-section">
-                                <div class="hotel-info">
+                            <div class="border-bottom"></div>
+                            <div class="row">
+                                <div class="col-md-4">
                                     <div class="hotel-img">
-                                        <img src="https://picsum.photos/200/300?image=61" alt="">
+                                        <img class="img-fluid" src="img/hotel%207.png" alt="hotel img">
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="hotel-text">
-                                        <h3>Four Seasons Hotel Baku</h3>
+                                        <h3>Opera Hotel</h3>
                                         <span>Bakı</span>
                                         <ul>
                                             <li><i class="material-icons">stars</i></li>
@@ -242,11 +362,13 @@
                                         <p>250 - 460 <sup>m</sup></p>
                                         <a href="#">Ətraflı</a>
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="service-info">
                                         <ul class="stars d-flex align-items-center">
                                             <li><i class="material-icons">star</i></li>
                                             <li><i class="material-icons">star</i></li>
-                                            <li><i class="material-icons">star</i></li>
+                                            <li><i class="material-icons">star_half</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li>368 rəy əsasında</li>
@@ -261,13 +383,15 @@
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
-                                <div class="border-bottom"></div>
                             </div>
-                            <div class="hotel-section">
-                                <div class="hotel-info">
+                            <div class="border-bottom"></div>
+                            <div class="row">
+                                <div class="col-md-4">
                                     <div class="hotel-img">
-                                        <img src="https://picsum.photos/200/300?image=98" alt="">
+                                        <img class="img-fluid" src="img/300.jpg" alt="hotel img">
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="hotel-text">
                                         <h3>Four Seasons Hotel Baku</h3>
                                         <span>Bakı</span>
@@ -281,11 +405,13 @@
                                         <p>250 - 460 <sup>m</sup></p>
                                         <a href="#">Ətraflı</a>
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="service-info">
                                         <ul class="stars d-flex align-items-center">
                                             <li><i class="material-icons">star</i></li>
                                             <li><i class="material-icons">star</i></li>
-                                            <li><i class="material-icons">star</i></li>
+                                            <li><i class="material-icons">star_half</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li>368 rəy əsasında</li>
@@ -300,15 +426,17 @@
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
-                                <div class="border-bottom"></div>
                             </div>
-                            <div class="hotel-section">
-                                <div class="hotel-info">
+                            <div class="border-bottom"></div>
+                            <div class="row">
+                                <div class="col-md-4">
                                     <div class="hotel-img">
-                                        <img src="https://picsum.photos/200/300?image=88" alt="">
+                                        <img class="img-fluid" src="img/hotel_2.png" alt="hotel img">
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="hotel-text">
-                                        <h3>Four Seasons Hotel Baku</h3>
+                                        <h3>Deniz Inn Boutique Hotel</h3>
                                         <span>Bakı</span>
                                         <ul>
                                             <li><i class="material-icons">stars</i></li>
@@ -320,11 +448,13 @@
                                         <p>250 - 460 <sup>m</sup></p>
                                         <a href="#">Ətraflı</a>
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="service-info">
                                         <ul class="stars d-flex align-items-center">
                                             <li><i class="material-icons">star</i></li>
                                             <li><i class="material-icons">star</i></li>
-                                            <li><i class="material-icons">star</i></li>
+                                            <li><i class="material-icons">star_half</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li>368 rəy əsasında</li>
@@ -339,15 +469,17 @@
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
-                                <div class="border-bottom"></div>
                             </div>
-                            <div class="hotel-section">
-                                <div class="hotel-info">
+                            <div class="border-bottom"></div>
+                            <div class="row">
+                                <div class="col-md-4">
                                     <div class="hotel-img">
-                                        <img src="https://picsum.photos/200/300?image=38" alt="">
+                                        <img class="img-fluid" src="img/hotel_2.png" alt="hotel img">
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="hotel-text">
-                                        <h3>Four Seasons Hotel Baku</h3>
+                                        <h3>Deniz Inn Boutique Hotel</h3>
                                         <span>Bakı</span>
                                         <ul>
                                             <li><i class="material-icons">stars</i></li>
@@ -359,11 +491,13 @@
                                         <p>250 - 460 <sup>m</sup></p>
                                         <a href="#">Ətraflı</a>
                                     </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="service-info">
                                         <ul class="stars d-flex align-items-center">
                                             <li><i class="material-icons">star</i></li>
                                             <li><i class="material-icons">star</i></li>
-                                            <li><i class="material-icons">star</i></li>
+                                            <li><i class="material-icons">star_half</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li><i class="material-icons">star_border</i></li>
                                             <li>368 rəy əsasında</li>
@@ -378,34 +512,79 @@
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
-                                <div class="border-bottom"></div>
                             </div>
-                        </div>
-                         <div class="col-md-12">
-                             <nav aria-label="Page navigation example">
-                                 <ul class="pagination d-flex justify-content-end align-items-center">
-                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                     <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                     <li class="page-item"><a class="page-link" href="#">9</a></li>
-                                     <li class="page-item"><a class="page-link" href="#">10</a></li>
-                                     <li class="page-item"><a class="page-link" href="#">11</a></li>
-                                     <li class="page-item disabled">
-                                         <a class="page-link" href="#" tabindex="-1">
-                                             <i class="material-icons">arrow_back</i>
-                                         </a>
-                                     </li>
-                                     <li class="page-item">
-                                         <a class="page-link" href="#">
-                                             <i class="material-icons">arrow_forward</i>
-                                         </a>
-                                     </li>
-                                 </ul>
-                             </nav>
-                         </div>
-                 </div>
-             </div>
+                            <div class="border-bottom"></div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="hotel-img">
+                                        <img class="img-fluid" src="img/hotel%2044.png" alt="hotel img">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="hotel-text">
+                                        <h3>Ramada Hotel Gabala</h3>
+                                        <span>Bakı</span>
+                                        <ul>
+                                            <li><i class="material-icons">stars</i></li>
+                                            <li><i class="material-icons">stars</i></li>
+                                            <li><i class="material-icons">stars</i></li>
+                                            <li><i class="material-icons">stars</i></li>
+                                            <li><i class="material-icons">stars</i></li>
+                                        </ul>
+                                        <p>250 - 460 <sup>m</sup></p>
+                                        <a href="#">Ətraflı</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="service-info">
+                                        <ul class="stars d-flex align-items-center">
+                                            <li><i class="material-icons">star</i></li>
+                                            <li><i class="material-icons">star</i></li>
+                                            <li><i class="material-icons">star_half</i></li>
+                                            <li><i class="material-icons">star_border</i></li>
+                                            <li><i class="material-icons">star_border</i></li>
+                                            <li>368 rəy əsasında</li>
+                                        </ul>
+                                        <ul class="services">
+                                            <li><i class="material-icons">wifi_tethering</i> Pulsuz WiFi</li>
+                                            <li><i class="material-icons">directions_car</i> Pulsuz avtomobil parkı</li>
+                                            <li><i class="material-icons">local_cafe</i>Pulsuz səhər yeməyi</li>
+                                            <li><i class="material-icons">pool</i>Su hovuzu</li>
+                                            <li><i class="material-icons">ac_unit</i>Hava kondsioneri</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="border-bottom"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination d-flex justify-content-end align-items-center">
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">
+                                        <i class="material-icons">arrow_back</i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <i class="material-icons">arrow_forward</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

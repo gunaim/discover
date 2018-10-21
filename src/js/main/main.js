@@ -1,3 +1,5 @@
-$('.left-side .input-group-append').click(function () {
+$(document).ready(
+    $('.left-side .input-group-append').click(function () {
         $(".left-side #search-input").val("");
-});
+    })
+);

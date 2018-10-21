@@ -14,6 +14,15 @@
         width: 100%;
         .menu{
           width: 70%;
+          .dropdown-menu{
+            .dropdown-item{
+              font-size: 1.4rem;
+              &:hover{
+                color: #166de3;
+                background-color: transparent;
+              }
+            }
+          }
         }
         .nav-item{
           margin-right: 20px;
@@ -33,6 +42,15 @@
         .login-language{
           .nav-link{
             color:#4e77af;
+          }
+          .dropdown-menu{
+            .dropdown-item{
+              font-size: 1.4rem;
+              &:hover{
+                color: #166de3;
+                background-color: transparent;
+              }
+            }
           }
         }
       }
