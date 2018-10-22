@@ -16,6 +16,9 @@
               &:not([size]):not([multiple]) {
                height: calc(3rem + 2px);
              }
+             &:focus{
+               box-shadow: none;
+             }
            }
            .btn{
              padding: 0;
@@ -31,7 +34,7 @@
          }
       }
     }
-  .line{
+     .line{
     height: 0.1rem;
     width: 100%;
     background-color: #e6e6e6;
@@ -96,6 +99,9 @@
           &::placeholder{
             color: #b2b2b2;
             font-size: 1.4rem;
+          }
+          &:focus{
+            box-shadow: none;
           }
         }
       }
@@ -301,34 +307,47 @@
       }
     }
     .reklam{
+      position: relative;
       img{
         margin-top: 15px;
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+      }
+      .reklam-link{
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        top: 15px;
+        left: 0;
+        padding: 5px 8px;
+        color: #b3b3b3;
       }
     }
-  }
+    }
   .sort{
-    padding-top: 15px;
-    margin-left: -10px;
-    ul{
-      list-style: none;
-      padding-left: 0;
-      li{
-        display: inline-block;
-        font-size: 14px;
-        margin-right: 25px;
-        &:last-child{
-          margin-right: 0;
-        }
-        a{
-          color:#4d4d4d;
-          text-decoration: none;
-        }
-        .color-blue{
-          color: blue;
-        }
-      }
+   ul{
+     margin-left: -48px;
+     li{
+       display: inline-block;
+       font-size: 14px;
+       margin-right: 25px;
+       &:last-child{
+         margin-right: 0;
+       }
+       a{
+         color:#4d4d4d;
+         text-decoration: none;
 
-    }
+       }
+       .color-blue{
+         color: blue;
+       }
+     }
+   }
   }
   .hotel-info{
     margin-left: 5px;

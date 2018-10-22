@@ -69,7 +69,7 @@ footer{
             text-decoration: none;
             &:before{
               font-family: "Material Icons";
-              content: "chevron_right";
+              content: "\e5cc";
               color: grey;
               font-size: 1.4rem;
               position: absolute;
@@ -81,7 +81,7 @@ footer{
               font-weight: bolder;
               &:before{
                 font-family: "Material Icons";
-                content: "business_center";
+                content: "\eb3f";
                 color: #ff7800;
                 font-size: 1.4rem;
                 position: absolute;

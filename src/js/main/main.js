@@ -54,3 +54,13 @@ $input2.on("change keyup",function () {
 $('img').on("error",function(){
     $(this).attr('src', '../img/image-not-found.png');
 });
+
+/*hover change img*/
+
+var $img=$('.reklam a img');
+var $url=$img.attr("src");
+$('.reklam a').hover(function () {
+    $img.attr('src',$img.attr('data-src'));
+},function () {
+    $img.attr('src',$url);
+});
