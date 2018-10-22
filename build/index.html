@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link rel="stylesheet" href="libs/ion-slider/ion.rangeSlider.css">
+    <link rel="stylesheet" href="libs/ion-slider/ion.rangeSlider.skinHTML5.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main/main.min.css">
 </head>
@@ -158,7 +160,11 @@
                         </div>
                         <div class="price left-border left-padding-top">
                             <p for="customRange1" class="left-title">Gecəlik qiymət:</p>
-                            <input type="range" class="custom-range">
+                            <div class="range-slider">
+                                <input type="text" id="range_49" value="" />
+                                <input type="text" name="c" class="c1">
+                                <input type="text" name="d" class="d1">
+                            </div>
                         </div>
                         <div class="distance left-border left-padding-top">
                             <p class="left-title">Uzaqlıq:</p>
@@ -842,10 +848,10 @@
             </div>
         </footer>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="libs/jquery/dist/jquery.min.js"><\/script>')</script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="libs/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script src="libs/ion-slider/ion.rangeSlider.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="libs/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
-      
       <script src="js/all.min.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

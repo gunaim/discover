@@ -265,20 +265,58 @@ body {
               font-size: 1.2rem;
               text-decoration: none; }
     .content-section .left-side .price {
-      padding: 20px 0; }
-      .content-section .left-side .price input {
-        margin-bottom: 10px; }
-    .content-section .left-side .distance label {
-      color: #808080;
-      font-size: 1.4rem; }
-    .content-section .left-side .distance select.form-control {
-      font-size: 1.4rem; }
-      .content-section .left-side .distance select.form-control:not([size]):not([multiple]) {
-        height: -webkit-calc(3.4rem + 2px);
-        height: -moz-calc(3.4rem + 2px);
-        height: calc(3.4rem + 2px); }
-    .content-section .left-side .distance select option {
-      color: #808080; }
+      padding: 20px 0 0 0; }
+      .content-section .left-side .price input[type="text"] {
+        margin-bottom: 20px; }
+      .content-section .left-side .price p {
+        margin-bottom: 0; }
+      .content-section .left-side .price .range-slider .c1, .content-section .left-side .price .range-slider .d1 {
+        padding: 7px 12px;
+        max-width: 107px;
+        margin-right: 10px;
+        font-size: 1.4rem;
+        color: #4c4c4c;
+        border: 1px solid #ccc; }
+      .content-section .left-side .price .range-slider .irs .irs-line {
+        height: 4px;
+        background-color: #cccccc;
+        border: 0; }
+      .content-section .left-side .price .range-slider .irs .irs-bar {
+        height: 4px;
+        background: #4e77af; }
+      .content-section .left-side .price .range-slider .irs .irs-slider {
+        top: 23px;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #4e77af;
+        background: #fff;
+        -webkit-border-radius: 27px;
+           -moz-border-radius: 27px;
+                border-radius: 27px;
+        cursor: pointer; }
+      .content-section .left-side .price .range-slider .irs .irs-min {
+        display: none; }
+      .content-section .left-side .price .range-slider .irs .irs-max {
+        display: none; }
+      .content-section .left-side .price .range-slider .irs .irs-from {
+        display: none; }
+      .content-section .left-side .price .range-slider .irs .irs-to {
+        display: none; }
+      .content-section .left-side .price .range-slider .irs .irs-single {
+        display: none; }
+    .content-section .left-side .distance {
+      padding-bottom: 10px; }
+      .content-section .left-side .distance label {
+        color: #808080;
+        font-size: 1.4rem; }
+      .content-section .left-side .distance select.form-control {
+        font-size: 1.4rem; }
+        .content-section .left-side .distance select.form-control:not([size]):not([multiple]) {
+          height: -webkit-calc(3.4rem + 2px);
+          height: -moz-calc(3.4rem + 2px);
+          height: calc(3.4rem + 2px); }
+      .content-section .left-side .distance select option {
+        color: #808080; }
     .content-section .left-side .comment form {
       padding: 10px 0; }
       .content-section .left-side .comment form .form-check {
@@ -483,7 +521,7 @@ footer {
     footer .menu-section .img-section .footer-logo-img-link img {
       margin-right: 5px; }
   footer .menu-section .img-section .social-block {
-    padding: 20px 0 0 0; }
+    padding: 20px 0 10px 0; }
     footer .menu-section .img-section .social-block .social-icon {
       display: inline-block;
       height: 36px;

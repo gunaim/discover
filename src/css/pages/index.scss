@@ -134,12 +134,61 @@
       }
     }
     .price{
-      padding: 20px 0;
-      input{
-        margin-bottom: 10px;
+      padding: 20px 0 0 0;
+      input[type="text"]{
+        margin-bottom: 20px;
+      }
+      p{
+        margin-bottom: 0;
+      }
+      .range-slider{
+        .c1,.d1{
+          padding: 7px 12px;
+          max-width: 107px;
+          margin-right: 10px;
+          font-size: 1.4rem;
+          color: #4c4c4c;
+          border: 1px solid #ccc;
+        }
+        .irs{
+          .irs-line{
+            height:4px;
+            background-color: #cccccc;
+            border: 0;
+          }
+          .irs-bar{
+            height: 4px;
+            background: #4e77af;
+          }
+          .irs-slider{
+            top: 23px;
+            width: 22px;
+            height: 22px;
+            border: 1px solid #4e77af;
+            background: #fff;
+            border-radius: 27px;
+            cursor: pointer;
+          }
+          .irs-min{
+            display: none;
+          }
+          .irs-max{
+            display: none;
+          }
+          .irs-from{
+            display: none;
+          }
+          .irs-to{
+            display: none;
+          }
+          .irs-single{
+            display: none;
+          }
+        }
       }
     }
     .distance{
+      padding-bottom: 10px;
       label{
         color: #808080;
         font-size: 1.4rem;
