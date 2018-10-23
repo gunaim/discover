@@ -57,10 +57,10 @@ $('img').on("error",function(){
 
 /*hover change img*/
 
-var $img=$('.reklam a img');
-var $url=$img.attr("src");
-$('.reklam a').hover(function () {
-    $img.attr('src',$img.attr('data-src'));
+
+$('.reklam a img').hover(function () {
+    $url=$(this).attr("src");
+    $(this).attr('src',$(this).attr('data-src'));
 },function () {
-    $img.attr('src',$url);
+    $(this).attr('src',$url);
 });

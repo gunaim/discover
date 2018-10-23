@@ -127,6 +127,11 @@ body {
   src: url("../../fonts/jaznb.eot");
   src: url("../../fonts/jaznb.eot?#iefix") format("embedded-opentype"), url("../../fonts/jaznb.woff2") format("woff2"), url("../../fonts/jaznb.woff") format("woff"), url("../../fonts/jaznb.ttf") format("truetype"), url("../../fonts/jaznb.svg#jaznb") format("svg"); }
 
+@font-face {
+  font-family: FiraSans-SemiBoldItalic;
+  src: url("../../fonts/FiraSans-SemiBoldItalic.eot");
+  src: url("../../fonts/FiraSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/FiraSans-SemiBoldItalic.woff2") format("woff2"), url("../../fonts/FiraSans-SemiBoldItalic.woff") format("woff"), url("../../fonts/FiraSans-SemiBoldItalic.ttf") format("truetype"), url("../../fonts/FiraSans-SemiBoldItalic.svg#FiraSans-SemiBoldItalic") format("svg"); }
+
 .title-section {
   margin-top: 30px; }
   .title-section .title {
@@ -194,7 +199,8 @@ body {
     .content-section .left-side .left-title {
       color: #4c4c4c;
       font-size: 1.8rem;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      font-family: FiraSans-SemiBoldItalic; }
     .content-section .left-side .left-border {
       border-top: 1px solid #cccccc; }
     .content-section .left-side .left-padding-top {
@@ -264,6 +270,8 @@ body {
             color: #4e77af;
             max-height: 30px;
             padding-top: 3px; }
+            .content-section .left-side .delete ul li a i {
+              font-size: 21px; }
           .content-section .left-side .delete ul li:first-child {
             margin-bottom: 10px; }
             .content-section .left-side .delete ul li:first-child span {
@@ -284,7 +292,10 @@ body {
         margin-right: 10px;
         font-size: 1.4rem;
         color: #4c4c4c;
-        border: 1px solid #ccc; }
+        border: 1px solid #ccc;
+        -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+                border-radius: 3px; }
       .content-section .left-side .price .range-slider .irs .irs-line {
         height: 4px;
         background-color: #cccccc;
@@ -420,6 +431,8 @@ body {
       .content-section .sort ul li a {
         color: #4d4d4d;
         text-decoration: none; }
+        .content-section .sort ul li a:hover {
+          color: #00f; }
       .content-section .sort ul li .color-blue {
         color: blue; }
   .content-section .hotel-info {
@@ -456,6 +469,10 @@ body {
         color: #ff7800;
         font-size: 2.4rem;
         font-weight: bolder; }
+        .content-section .hotel-info .hotel-text p sup {
+          font-family: jaznb;
+          font-size: 2.9rem;
+          top: 0; }
       .content-section .hotel-info .hotel-text a {
         display: inline-block;
         background-color: #ff7800;
@@ -504,7 +521,8 @@ body {
              -moz-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          line-height: 2.3rem; }
+          line-height: 1.5rem;
+          margin-bottom: 4px; }
           .content-section .hotel-info .service-info ul.services li i {
             font-size: 2.1rem;
             color: #4e77af;
@@ -552,7 +570,17 @@ footer {
               border-radius: 50%;
       line-height: 36px;
       text-align: center;
-      margin-right: 5px; }
+      margin-right: 5px;
+      -webkit-transition: ease .5s;
+      -o-transition: ease .5s;
+      -moz-transition: ease .5s;
+      transition: ease .5s; }
+      footer .menu-section .img-section .social-block .social-icon:hover {
+        -webkit-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg); }
       footer .menu-section .img-section .social-block .social-icon:nth-child(1) {
         background-color: #3b5998; }
       footer .menu-section .img-section .social-block .social-icon:nth-child(2) {
@@ -596,6 +624,10 @@ footer {
               position: absolute;
               top: 1px;
               left: -16px; }
+          footer .menu-section .footer-menu-block .footer-menu-items li a:hover:not(.login-link) {
+            color: #00f; }
+            footer .menu-section .footer-menu-block .footer-menu-items li a:hover:not(.login-link):before {
+              color: #00f; }
   footer .contact-section {
     padding: 50px 0 40px 0;
     border-top: 1px solid #e6e6e6;
@@ -665,6 +697,10 @@ footer {
       width: 100%; }
       .header-section nav .navbar-nav .menu {
         width: 70%; }
+        .header-section nav .navbar-nav .menu .nav-item .nav-link {
+          font-weight: 600; }
+          .header-section nav .navbar-nav .menu .nav-item .nav-link:hover {
+            color: #166de3; }
         .header-section nav .navbar-nav .menu .dropdown-menu .dropdown-item {
           font-size: 1.4rem; }
           .header-section nav .navbar-nav .menu .dropdown-menu .dropdown-item:hover {
@@ -676,7 +712,8 @@ footer {
           margin-right: 0; }
         .header-section nav .navbar-nav .nav-item .nav-link {
           color: #4c4c4c;
-          font-size: 16px; }
+          font-size: 16px;
+          font-weight: 600; }
           .header-section nav .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
             display: none; }
       .header-section nav .navbar-nav .login-language .nav-link {

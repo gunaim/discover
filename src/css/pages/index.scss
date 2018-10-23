@@ -15,10 +15,17 @@
               font-size: 1.5rem !important;
               &:not([size]):not([multiple]) {
                height: calc(3rem + 2px);
+
              }
-             &:focus{
+              &:focus{
                box-shadow: none;
              }
+             // option{
+             //  &:hover{
+             //    background-color: transparent;
+             //    color: #4e77af;
+             //  }
+             //}
            }
            .btn{
              padding: 0;
@@ -55,6 +62,7 @@
       color: #4c4c4c;
       font-size: 1.8rem;
       margin-bottom: 10px;
+      font-family: $firaSans;
     }
     .left-border{
       border-top: 1px solid #cccccc;
@@ -124,6 +132,9 @@
               color: #4e77af;
               max-height: 30px;
               padding-top: 3px;
+              i{
+                font-size: 21px;
+              }
             }
           &:first-child{
             margin-bottom: 10px;
@@ -155,6 +166,7 @@
           font-size: 1.4rem;
           color: #4c4c4c;
           border: 1px solid #ccc;
+          border-radius: 3px;
         }
         .irs{
           .irs-line{
@@ -341,7 +353,9 @@
        a{
          color:#4d4d4d;
          text-decoration: none;
-
+          &:hover{
+            color: #00f;
+          }
        }
        .color-blue{
          color: blue;
@@ -387,6 +401,11 @@
         color:#ff7800;
         font-size: 2.4rem;
         font-weight: bolder;
+        sup{
+          font-family: $aznb;
+          font-size: 2.9rem;
+          top: 0;
+        }
       }
       a{
         display: inline-block;
@@ -431,7 +450,8 @@
             font-size: 1.2rem;
             display: flex;
             align-items: center;
-            line-height: 2.3rem;
+            line-height: 1.5rem;
+            margin-bottom: 4px;
             i{
               font-size: 2.1rem;
               color: #4e77af;
