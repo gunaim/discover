@@ -3,6 +3,7 @@
     .title{
       font-size: 30px;
       font-weight: bold;
+      font-family: $firaSansBold;
       color: #4c4c4c;
     }
     .filter{
@@ -13,19 +14,13 @@
            align-items: flex-end;
            .form-control{
               font-size: 1.5rem !important;
+              font-family: $firaSansRegular;
               &:not([size]):not([multiple]) {
                height: calc(3rem + 2px);
-
              }
               &:focus{
                box-shadow: none;
              }
-             // option{
-             //  &:hover{
-             //    background-color: transparent;
-             //    color: #4e77af;
-             //  }
-             //}
            }
            .btn{
              padding: 0;
@@ -53,7 +48,7 @@
     background-color: #e6e6e6;
     height: 1px;
     width: 100%;
-    margin: 25px 0;
+    margin: 10px 0 25px 0;
   }
   .left-side{
     padding-top: 30px;
@@ -62,7 +57,7 @@
       color: #4c4c4c;
       font-size: 1.8rem;
       margin-bottom: 10px;
-      font-family: $firaSans;
+      font-family: $firaSansRegular;
     }
     .left-border{
       border-top: 1px solid #cccccc;
@@ -125,10 +120,12 @@
             span{
               color: #4e77af;
               font-size: 1.4rem;
+              font-family: $firaSansRegular;
             }
             a{
               float: right;
               font-size: 2rem;
+              font-family: $firaSansRegular;
               color: #4e77af;
               max-height: 30px;
               padding-top: 3px;
@@ -140,10 +137,12 @@
             margin-bottom: 10px;
             span{
               font-size: 1.8rem;
+              font-family: $firaSansRegular;
               color: #4c4c4c;
             }
             a{
               font-size: 1.2rem;
+              font-family: $firaSansRegular;
               text-decoration: none;
             }
           }
@@ -157,6 +156,7 @@
       }
       p{
         margin-bottom: 0;
+        font-family: $firaSansRegular;
       }
       .range-slider{
         .c1,.d1{
@@ -164,6 +164,7 @@
           max-width: 107px;
           margin-right: 10px;
           font-size: 1.4rem;
+          font-family: $firaSansRegular;
           color: #4c4c4c;
           border: 1px solid #ccc;
           border-radius: 3px;
@@ -210,10 +211,12 @@
       label{
         color: #808080;
         font-size: 1.4rem;
+        font-family: $firaSansRegular;
       }
       select{
         &.form-control {
           font-size: 1.4rem;
+          font-family: $firaSansRegular;
           &:not([size]):not([multiple]) {
             height: calc(3.4rem + 2px);
           }
@@ -300,6 +303,7 @@
             margin-left: 2px;
             color: #808080;
             font-size: 1.4rem;
+            font-family: $firaSansRegular;
             i{
               color: #808080;
               font-size: 1.6rem;
@@ -332,6 +336,7 @@
         font-weight: bold;
         background-color: #fff;
         font-size: 1rem;
+        font-family: $firaSansRegular;
         text-decoration: none;
         top: 15px;
         left: 0;
@@ -341,11 +346,13 @@
     }
     }
   .sort{
+    padding-top: 10px;
    ul{
      margin-left: -48px;
      li{
        display: inline-block;
-       font-size: 14px;
+       font-size: 1.4rem;
+       font-family: $firaSansBold;
        margin-right: 25px;
        &:last-child{
          margin-right: 0;
@@ -353,6 +360,7 @@
        a{
          color:#4d4d4d;
          text-decoration: none;
+         font-family: $firaSansRegular;
           &:hover{
             color: #00f;
           }
@@ -379,11 +387,12 @@
       h3{
         color: #4e77af;
         font-size: 2.2rem;
-        font-weight: bolder;
+        font-family:$firaSansBold ;
       }
       span{
         color:#808080;
         font-size: 1.4rem;
+        font-family: $firaSansRegular;
       }
       ul{
         list-style: none;
@@ -400,7 +409,7 @@
       p{
         color:#ff7800;
         font-size: 2.4rem;
-        font-weight: bolder;
+        font-family: $firaSansBold;
         sup{
           font-family: $aznb;
           font-size: 2.9rem;
@@ -408,6 +417,7 @@
         }
       }
       a{
+        font-family: $firaSansBold;
         display: inline-block;
         background-color: #ff7800;
         padding: 8px 10px;
@@ -435,7 +445,8 @@
             &:last-child{
               margin-left: 15px;
               color: #808080;
-              font-size: 1.2rem;
+              font-size: 1.1rem;
+              font-family: $firaSansRegular;
             }
             i{
               color: #b2b2b2;
@@ -447,6 +458,7 @@
         &.services{
           list-style: none;
           li{
+            font-family: $firaSansRegular;
             font-size: 1.2rem;
             display: flex;
             align-items: center;
@@ -473,9 +485,21 @@
             border: none;
             font-weight: bolder;
             background-color: transparent;
+            display: flex;
+            align-items: center;
             i{
               font-size: 1.4rem;
               font-weight: bolder;
+            }
+          }
+          &.disabled,&:last-child{
+            i{
+              font-size: 2rem;
+            }
+          }
+          &.disabled{
+            i{
+              color: #dbdbdb;
             }
           }
         }

@@ -1,6 +1,7 @@
 .header-section{
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
+
   nav{
       padding-left: 0;
       padding-right: 0;
@@ -17,6 +18,7 @@
           .nav-item{
             .nav-link{
               font-weight: 600;
+              font-family:$firaSansRegular;
               &:hover{
                 color: #166de3;
               }
@@ -25,6 +27,7 @@
           .dropdown-menu{
             .dropdown-item{
               font-size: 1.4rem;
+              font-family:$firaSansRegular;
               &:hover{
                 color: #166de3;
                 background-color: transparent;
@@ -39,8 +42,8 @@
           }
           .nav-link{
             color: #4c4c4c;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 1.5rem;
+            font-family:$firaSansRegular;
             &.dropdown-toggle {
               &:after {
                 display: none;
@@ -51,10 +54,13 @@
         .login-language{
           .nav-link{
             color:#4e77af;
+            font-weight: bold;
           }
           .dropdown-menu{
             .dropdown-item{
+              font-family:$firaSansRegular;
               font-size: 1.4rem;
+              font-weight: bold;
               &:hover{
                 color: #166de3;
                 background-color: transparent;

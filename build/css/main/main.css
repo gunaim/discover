@@ -132,11 +132,22 @@ body {
   src: url("../../fonts/FiraSans-SemiBoldItalic.eot");
   src: url("../../fonts/FiraSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/FiraSans-SemiBoldItalic.woff2") format("woff2"), url("../../fonts/FiraSans-SemiBoldItalic.woff") format("woff"), url("../../fonts/FiraSans-SemiBoldItalic.ttf") format("truetype"), url("../../fonts/FiraSans-SemiBoldItalic.svg#FiraSans-SemiBoldItalic") format("svg"); }
 
+@font-face {
+  font-family: FiraSans-Regular;
+  src: url("../../fonts/FiraSans-Regular.eot");
+  src: url("../../fonts/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/FiraSans-Regular.woff2") format("woff2"), url("../../fonts/FiraSans-Regular.woff") format("woff"), url("../../fonts/FiraSans-Regular.ttf") format("truetype"), url("../../fonts/FiraSans-Regular.svg#FiraSans-Regular") format("svg"); }
+
+@font-face {
+  font-family: FiraSans-Bold;
+  src: url("../../fonts/FiraSans-Bold.eot");
+  src: url("../../fonts/FiraSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/FiraSans-Bold.woff2") format("woff2"), url("../../fonts/FiraSans-Bold.woff") format("woff"), url("../../fonts/FiraSans-Bold.ttf") format("truetype"), url("../../fonts/FiraSans-Bold.svg#FiraSans-Bold") format("svg"); }
+
 .title-section {
   margin-top: 30px; }
   .title-section .title {
     font-size: 30px;
     font-weight: bold;
+    font-family: FiraSans-Bold;
     color: #4c4c4c; }
   .title-section .filter .form-row {
     -webkit-box-pack: end;
@@ -156,7 +167,8 @@ body {
           -ms-flex-align: end;
               align-items: flex-end; }
       .title-section .filter .form-row .form-group .form-control {
-        font-size: 1.5rem !important; }
+        font-size: 1.5rem !important;
+        font-family: FiraSans-Regular; }
         .title-section .filter .form-row .form-group .form-control:not([size]):not([multiple]) {
           height: -webkit-calc(3rem + 2px);
           height: -moz-calc(3rem + 2px);
@@ -192,7 +204,7 @@ body {
     background-color: #e6e6e6;
     height: 1px;
     width: 100%;
-    margin: 25px 0; }
+    margin: 10px 0 25px 0; }
   .content-section .left-side {
     padding-top: 30px;
     margin-right: 10px; }
@@ -200,7 +212,7 @@ body {
       color: #4c4c4c;
       font-size: 1.8rem;
       margin-bottom: 10px;
-      font-family: FiraSans-SemiBoldItalic; }
+      font-family: FiraSans-Regular; }
     .content-section .left-side .left-border {
       border-top: 1px solid #cccccc; }
     .content-section .left-side .left-padding-top {
@@ -263,10 +275,12 @@ body {
           line-height: 3rem; }
           .content-section .left-side .delete ul li span {
             color: #4e77af;
-            font-size: 1.4rem; }
+            font-size: 1.4rem;
+            font-family: FiraSans-Regular; }
           .content-section .left-side .delete ul li a {
             float: right;
             font-size: 2rem;
+            font-family: FiraSans-Regular;
             color: #4e77af;
             max-height: 30px;
             padding-top: 3px; }
@@ -276,21 +290,25 @@ body {
             margin-bottom: 10px; }
             .content-section .left-side .delete ul li:first-child span {
               font-size: 1.8rem;
+              font-family: FiraSans-Regular;
               color: #4c4c4c; }
             .content-section .left-side .delete ul li:first-child a {
               font-size: 1.2rem;
+              font-family: FiraSans-Regular;
               text-decoration: none; }
     .content-section .left-side .price {
       padding: 20px 0 0 0; }
       .content-section .left-side .price input[type="text"] {
         margin-bottom: 20px; }
       .content-section .left-side .price p {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-family: FiraSans-Regular; }
       .content-section .left-side .price .range-slider .c1, .content-section .left-side .price .range-slider .d1 {
         padding: 7px 12px;
         max-width: 107px;
         margin-right: 10px;
         font-size: 1.4rem;
+        font-family: FiraSans-Regular;
         color: #4c4c4c;
         border: 1px solid #ccc;
         -webkit-border-radius: 3px;
@@ -327,9 +345,11 @@ body {
       padding-bottom: 10px; }
       .content-section .left-side .distance label {
         color: #808080;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        font-family: FiraSans-Regular; }
       .content-section .left-side .distance select.form-control {
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        font-family: FiraSans-Regular; }
         .content-section .left-side .distance select.form-control:not([size]):not([multiple]) {
           height: -webkit-calc(3.4rem + 2px);
           height: -moz-calc(3.4rem + 2px);
@@ -388,7 +408,8 @@ body {
         .content-section .left-side .style form .form-check label {
           margin-left: 2px;
           color: #808080;
-          font-size: 1.4rem; }
+          font-size: 1.4rem;
+          font-family: FiraSans-Regular; }
           .content-section .left-side .style form .form-check label i {
             color: #808080;
             font-size: 1.6rem; }
@@ -415,26 +436,31 @@ body {
         font-weight: bold;
         background-color: #fff;
         font-size: 1rem;
+        font-family: FiraSans-Regular;
         text-decoration: none;
         top: 15px;
         left: 0;
         padding: 5px 8px;
         color: #b3b3b3; }
-  .content-section .sort ul {
-    margin-left: -48px; }
-    .content-section .sort ul li {
-      display: inline-block;
-      font-size: 14px;
-      margin-right: 25px; }
-      .content-section .sort ul li:last-child {
-        margin-right: 0; }
-      .content-section .sort ul li a {
-        color: #4d4d4d;
-        text-decoration: none; }
-        .content-section .sort ul li a:hover {
-          color: #00f; }
-      .content-section .sort ul li .color-blue {
-        color: blue; }
+  .content-section .sort {
+    padding-top: 10px; }
+    .content-section .sort ul {
+      margin-left: -48px; }
+      .content-section .sort ul li {
+        display: inline-block;
+        font-size: 1.4rem;
+        font-family: FiraSans-Bold;
+        margin-right: 25px; }
+        .content-section .sort ul li:last-child {
+          margin-right: 0; }
+        .content-section .sort ul li a {
+          color: #4d4d4d;
+          text-decoration: none;
+          font-family: FiraSans-Regular; }
+          .content-section .sort ul li a:hover {
+            color: #00f; }
+        .content-section .sort ul li .color-blue {
+          color: blue; }
   .content-section .hotel-info {
     margin-left: 5px; }
     .content-section .hotel-info .hotel-img {
@@ -452,10 +478,11 @@ body {
       .content-section .hotel-info .hotel-text h3 {
         color: #4e77af;
         font-size: 2.2rem;
-        font-weight: bolder; }
+        font-family: FiraSans-Bold; }
       .content-section .hotel-info .hotel-text span {
         color: #808080;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        font-family: FiraSans-Regular; }
       .content-section .hotel-info .hotel-text ul {
         list-style: none;
         padding-left: 0;
@@ -468,12 +495,13 @@ body {
       .content-section .hotel-info .hotel-text p {
         color: #ff7800;
         font-size: 2.4rem;
-        font-weight: bolder; }
+        font-family: FiraSans-Bold; }
         .content-section .hotel-info .hotel-text p sup {
           font-family: jaznb;
           font-size: 2.9rem;
           top: 0; }
       .content-section .hotel-info .hotel-text a {
+        font-family: FiraSans-Bold;
         display: inline-block;
         background-color: #ff7800;
         padding: 8px 10px;
@@ -504,12 +532,14 @@ body {
           .content-section .hotel-info .service-info ul.stars li:last-child {
             margin-left: 15px;
             color: #808080;
-            font-size: 1.2rem; }
+            font-size: 1.1rem;
+            font-family: FiraSans-Regular; }
           .content-section .hotel-info .service-info ul.stars li i {
             color: #b2b2b2; }
       .content-section .hotel-info .service-info ul.services {
         list-style: none; }
         .content-section .hotel-info .service-info ul.services li {
+          font-family: FiraSans-Regular;
           font-size: 1.2rem;
           display: -webkit-box;
           display: -webkit-flex;
@@ -534,10 +564,24 @@ body {
       font-size: 1.4rem !important;
       border: none;
       font-weight: bolder;
-      background-color: transparent; }
+      background-color: transparent;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .content-section nav ul.pagination .page-item .page-link i {
         font-size: 1.4rem;
         font-weight: bolder; }
+    .content-section nav ul.pagination .page-item.disabled i, .content-section nav ul.pagination .page-item:last-child i {
+      font-size: 2rem; }
+    .content-section nav ul.pagination .page-item.disabled i {
+      color: #dbdbdb; }
 
 footer {
   border-top: 1px solid #e6e6e6;
@@ -553,6 +597,7 @@ footer {
       max-width: 200px;
       max-height: 90px; }
   footer .menu-section .img-section p {
+    font-family: FiraSans-Regular;
     color: #808080;
     font-size: 1.4rem; }
   footer .menu-section .img-section .footer-logo-img-link {
@@ -592,6 +637,7 @@ footer {
   footer .menu-section .footer-menu-block {
     padding: 10px 0 0; }
     footer .menu-section .footer-menu-block .footer-menu-title {
+      font-family: FiraSans-Bold;
       color: #4c4c4c;
       font-size: 1.6rem !important;
       padding-bottom: 14px;
@@ -601,6 +647,7 @@ footer {
       footer .menu-section .footer-menu-block .footer-menu-items li {
         position: relative; }
         footer .menu-section .footer-menu-block .footer-menu-items li a {
+          font-family: FiraSans-Regular;
           color: #808080;
           font-size: 1.4rem;
           line-height: 3rem;
@@ -633,11 +680,13 @@ footer {
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6; }
     footer .contact-section .footer-contact-info .footer-contact-title {
+      font-family: FiraSans-Bold;
       padding-bottom: 20px;
       font-size: 1.8rem;
       font-weight: bolder;
       color: #4c4c4c; }
     footer .contact-section .footer-contact-info .contact-link {
+      font-family: FiraSans-Regular;
       text-decoration: none;
       font-size: 1.8rem;
       color: #4c4c4c;
@@ -657,6 +706,7 @@ footer {
         font-size: 2.4rem;
         margin-right: 7px; }
     footer .contact-section .footer-contact-info .contact-description {
+      font-family: FiraSans-Regular;
       color: #b2b2b2;
       font-size: 1.2rem;
       line-height: 2.6rem; }
@@ -669,17 +719,18 @@ footer {
     width: 100%; }
     footer .footer-bottom-section ul {
       margin-bottom: 0; }
-      footer .footer-bottom-section ul li {
+      footer .footer-bottom-section ul .list-inline-item {
         margin-right: 0 !important; }
-        footer .footer-bottom-section ul li a {
+        footer .footer-bottom-section ul .list-inline-item a {
+          font-family: FiraSans-Regular;
           text-decoration: none;
           color: #4e77af;
           font-size: 1.4rem; }
-        footer .footer-bottom-section ul li:after {
+        footer .footer-bottom-section ul .list-inline-item:after {
           content: "|";
           margin: 0 6px;
           color: #4e77af; }
-        footer .footer-bottom-section ul li:last-child:after {
+        footer .footer-bottom-section ul .list-inline-item:last-child:after {
           content: ""; }
 
 .header-section {
@@ -698,11 +749,13 @@ footer {
       .header-section nav .navbar-nav .menu {
         width: 70%; }
         .header-section nav .navbar-nav .menu .nav-item .nav-link {
-          font-weight: 600; }
+          font-weight: 600;
+          font-family: FiraSans-Regular; }
           .header-section nav .navbar-nav .menu .nav-item .nav-link:hover {
             color: #166de3; }
         .header-section nav .navbar-nav .menu .dropdown-menu .dropdown-item {
-          font-size: 1.4rem; }
+          font-size: 1.4rem;
+          font-family: FiraSans-Regular; }
           .header-section nav .navbar-nav .menu .dropdown-menu .dropdown-item:hover {
             color: #166de3;
             background-color: transparent; }
@@ -712,14 +765,17 @@ footer {
           margin-right: 0; }
         .header-section nav .navbar-nav .nav-item .nav-link {
           color: #4c4c4c;
-          font-size: 16px;
-          font-weight: 600; }
+          font-size: 1.5rem;
+          font-family: FiraSans-Regular; }
           .header-section nav .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
             display: none; }
       .header-section nav .navbar-nav .login-language .nav-link {
-        color: #4e77af; }
+        color: #4e77af;
+        font-weight: bold; }
       .header-section nav .navbar-nav .login-language .dropdown-menu .dropdown-item {
-        font-size: 1.4rem; }
+        font-family: FiraSans-Regular;
+        font-size: 1.4rem;
+        font-weight: bold; }
         .header-section nav .navbar-nav .login-language .dropdown-menu .dropdown-item:hover {
           color: #166de3;
           background-color: transparent; }

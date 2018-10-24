@@ -16,6 +16,7 @@ footer{
         }
       }
       p{
+        font-family: $firaSansRegular;
         color: #808080;
         font-size: 1.4rem;
       }
@@ -57,6 +58,7 @@ footer{
     .footer-menu-block{
       padding: 10px 0 0;
       .footer-menu-title{
+        font-family: $firaSansBold;
         color: #4c4c4c;
         font-size: 1.6rem !important;
         padding-bottom:14px;
@@ -67,6 +69,7 @@ footer{
         li{
           position: relative;
           a{
+            font-family:$firaSansRegular;
             color: #808080;
             font-size: 1.4rem;
             line-height: 3rem;
@@ -110,12 +113,14 @@ footer{
     border-bottom: 1px solid #e6e6e6;
     .footer-contact-info{
       .footer-contact-title{
+        font-family: $firaSansBold;
         padding-bottom: 20px;
         font-size: 1.8rem;
         font-weight: bolder;
         color: #4c4c4c;
       }
       .contact-link{
+        font-family: $firaSansRegular;
         text-decoration: none;
         font-size:1.8rem;
         color: #4c4c4c;
@@ -129,6 +134,7 @@ footer{
         }
       }
       .contact-description{
+        font-family: $firaSansRegular;
         color: #b2b2b2;
         font-size: 1.2rem;
         line-height: 2.6rem;
@@ -145,9 +151,10 @@ footer{
     width: 100%;
     ul{
       margin-bottom: 0;
-      li{
+      .list-inline-item{
         margin-right: 0 !important;
         a{
+          font-family: $firaSansRegular;
           text-decoration: none;
           color: #4e77af;
           font-size:1.4rem;

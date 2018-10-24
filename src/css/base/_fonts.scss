@@ -3,3 +3,10 @@
 @font-face {
   @include font-family($firaSans);
 }
+@font-face {
+  @include font-family($firaSansRegular);
+}
+
+@font-face {
+  @include font-family($firaSansBold);
+}
